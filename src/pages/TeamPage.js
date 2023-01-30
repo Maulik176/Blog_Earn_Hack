@@ -4,6 +4,10 @@ import { useNavigate } from "react-router-dom";
 const TeamPage = () => {
   const navigate = useNavigate();
 
+  const onHomeClick = useCallback(() => {
+    navigate("/");
+  }, [navigate]);
+
   const onTeamClick = useCallback(() => {
     navigate("/team-page");
   }, [navigate]);
@@ -87,7 +91,10 @@ const TeamPage = () => {
               </p>
               <p className="m-0">Earn</p>
             </button>
-            <button className="cursor-pointer [border:none] p-0 bg-[transparent] absolute top-[19px] left-[179px] text-4xs font-bold font-jost text-white text-left inline-block w-[107px] h-6">
+            <button
+              className="cursor-pointer [border:none] p-0 bg-[transparent] absolute top-[19px] left-[179px] text-4xs font-bold font-jost text-white text-left inline-block w-[107px] h-6"
+              onClick={onHomeClick}
+            >
               Home
             </button>
             <button className="cursor-pointer [border:none] p-0 bg-[transparent] absolute top-[19px] left-[399px] text-4xs font-bold font-jost text-white text-left inline-block w-[108px] h-6">

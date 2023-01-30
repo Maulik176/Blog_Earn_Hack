@@ -37,7 +37,10 @@ const Card = () => {
       data-animate-on-scroll
     >
       <div className="absolute top-[0px] left-[0px] rounded-base [background:linear-gradient(135deg,_#ee82ee,_#572ff9_63.54%,_#0000ff)] w-[380px] h-[460px]" />
-      <div className="absolute top-[9.15px] left-[21.84px] inline-block w-[348.67px] h-[243.91px]">
+      <div
+        className="absolute top-[9.15px] left-[21.84px] inline-block w-[348.67px] h-[243.91px]"
+        data-scroll-to="chooseThePerfect"
+      >
         <p className="[margin-block-start:0] [margin-block-end:0px]">
           <b>
             <span>&nbsp;</span>
